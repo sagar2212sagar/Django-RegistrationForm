@@ -1,0 +1,105 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% load static %}
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+ <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+
+</head>
+
+
+
+<body>
+
+<br>
+<br>
+<br>
+
+
+<div class="container">
+  <div class="panel panel-primary">
+    <div class="panel-body">
+      <h3 class="text-on-pannel text-primary"><strong class="text-uppercase"> GeekCoders-Team </strong></h3>
+
+<form action="" method="post" class="form-horizontal">
+    {% csrf_token %}
+  <div class="form-group"><label class="col-md-2 control-label">Name</label>
+    <div class="col-md-4">
+      {{ form.name }}
+    </div>
+  </div>
+     <div class="form-group"><label class="col-md-2 control-label">Email</label>
+    <div class="col-md-4">
+      {{ form.emailid }}
+    </div>
+  </div>
+   <div class="form-group"><label class="col-md-2 control-label">Highest-Education</label>
+    <div class="col-md-4">
+      {{ form.education }}
+    </div>
+  </div>
+
+   <div class="form-group"><label class="col-md-2 control-label">Contact</label>
+    <div class="col-md-4">
+      {{ form.phone }}
+    </div>
+  </div>
+
+   <div class="form-group"><label class="col-md-2 control-label">Present-Address</label>
+    <div class="col-md-4">
+      {{ form.address1 }}
+    </div>
+  </div>
+    <div class="form-group"><label class="col-md-2 control-label">Permanent-Address</label>
+    <div class="col-md-4">
+      {{ form.paddress }}
+    </div>
+  </div>
+    <div class="form-group"><label class="col-md-2 control-label">Website(URL)</label>
+    <div class="col-md-4">
+      {{ form.url}}
+    </div>
+  </div>
+  <div class="form-group"><label class="col-md-2 control-label">Hackerrank(URL)</label>
+    <div class="col-md-4">
+      {{ form.hacker}}
+    </div>
+  </div>
+  <div class="form-group"><label class="col-md-2 control-label">Linkeldin(URL)</label>
+    <div class="col-md-4">
+      {{ form.linkdin}}
+    </div>
+  </div>
+  <div class="form-group"><label class="col-md-2 control-label">Github(URL)</label>
+    <div class="col-md-4">
+      {{ form.git}}
+    </div>
+  </div>
+    <div class="form-group"><label class="col-md-2 control-label">Why do you want to be a part of GeekCoders</label>
+    <div class="col-md-4">
+      {{ form.blog}}
+    </div>
+  </div>
+
+
+
+<label class="col-md-2 control-label">Register Here</label>
+ <button class="btn btn-primary " type="submit">Register</button>
+
+
+</form>
+</div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
